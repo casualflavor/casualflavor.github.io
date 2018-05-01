@@ -1,23 +1,45 @@
-ul.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #404040;
+@media all {
+
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #404040;
+  }
+
+  li.menu {
+    float: left;
+  }
+
+  li a.menu {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+  } 
+
+  li a.menu:hover {
+    background-color: #000000;
+  }
+
 }
 
-li.menu {
-  float: left;
+@media only screen and (min-device-width: 720px) {
+
+  li a.menu {
+    font-size: 125%;
+    padding: 10px;
+  }
+
 }
 
-li a.menu {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  text-decoration: none;
-}
+@media only screen and (max-device-width: 720px) {
 
-li a.menu:hover {
-  background-color: #000000;
+  li a.menu {
+    font-size: 200%;
+    padding: 5px;
+  }
+
 }
